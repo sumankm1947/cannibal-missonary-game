@@ -1,0 +1,221 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    /* background-color:black; */
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.sky {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("./images/sky.jpg") ;
+    z-index: 10;
+}
+
+.btn {
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 0px;
+    width: 150px;
+    position: absolute;
+    margin: 10px calc(50vw - 75px);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.bg-mountain {
+    position: absolute;
+    bottom: 100px;
+    height: 70vh;
+    width: 100vw;
+    background: no-repeat center/cover url("./images/bg-mountain.png");
+    z-index: 15;
+}
+
+.mountain-left {
+    position: absolute;
+    bottom: -10px;
+    height: 350px;
+    width: 50vw;
+    background: no-repeat center/cover url("./images/mountain-1.png");
+    z-index: 20;
+}
+
+.mountain-right {
+    position: absolute;
+    bottom: -10px;
+    height: 350px;
+    width: 50vw;
+    right: 0;
+    transform: rotateY(180deg);
+    background: no-repeat center/cover url("./images/mountain-1.png");
+    z-index: 20;
+}
+
+.game {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.boat-person {
+    position: absolute;
+    height: 500px;
+    width: 50vw;
+    left: 25vw;
+    bottom: 10px;
+    /* background-color: #fff; */
+    z-index: 50;
+}
+
+.boat {
+    position: absolute;
+    bottom: -10px;
+    height: 60px;
+    width: 135px;
+    /* background: #000; */
+    background: no-repeat center/cover url("./images/boat.png");
+    z-index: 100;
+}
+
+#person-1 {
+    position: absolute;
+    z-index: 60;
+}
+#person-2 {
+    position: absolute;
+    z-index: 60;
+}
+
+.p-1-left{
+    left: 10px;
+}
+.p-2-left{
+    left: 70px;
+}
+.p-1-right{
+    right: 10px;
+}
+.p-2-right{
+    right: 70px;
+}
+
+
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+    transform: rotateY(180deg);
+}
+.cannibal {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    background: no-repeat center/cover url("./images/cannibal.png");
+    z-index: 100;
+    cursor: pointer;
+    bottom: 20px;
+    transition: all .3s;
+}
+.missonary {
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    background: no-repeat center/cover url("./images/missonary.png");
+    z-index: 100;
+    cursor: pointer;
+    bottom: 20px;
+    transition: all .3s;
+}
+
+.lc-1{
+    left: 0px;
+}
+.lc-2{
+    left: 40px;
+}
+.lc-3{
+    left: 80px;
+}
+
+.lm-1{
+    left: 140px;
+}
+.lm-2{
+    left: 180px;
+}
+.lm-3{
+    left: 220px;
+}
+.rc-1{
+    right: 0px;
+    /* transform: rotateY(180deg); */
+}
+.rc-2{
+    right: 40px;
+    /* transform: rotateY(180deg); */
+}
+.rc-3{
+    right: 80px;
+    /* transform: rotateY(180deg); */
+}
+
+.rm-1{
+    right: 140px;
+    /* transform: rotateY(180deg); */
+}
+.rm-2{
+    right: 180px;
+    /* transform: rotateY(180deg); */
+}
+.rm-3{
+    right: 220px;
+    /* transform: rotateY(180deg); */
+}
+.missonary:hover{
+    transform: scale(1.1);
+}
+.cannibal:hover{
+    transform: scale(1.1);
+}
+.rotate {
+    transform: rotateY(180deg);
+}
+
+
+.modal {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.replay {
+    background:white;
+    color: black;
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    cursor: pointer;
+}
+.modal > h1 {
+color: white;
+font-weight: 900;
+font-size: 3rem;
+}
+
+.hide {
+    display: none;
+}
